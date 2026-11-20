@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int grade;
+    int counter = 0;
+    int student = 1;
+    int passed = 0;
+    int failed = 0;
+    
+    while  (student <= 10){
+        cout<<"Enter grade of student" <<student <<endl;
+        cout<<"Grade :";
+        cin>> grade;
+        
+        if (grade >= 75){
+            counter++;
+            student++;
+            passed++;
+            
+        }else{
+            student++;
+            failed++;
+        }
+    }
+    cout << "Number of students who passed: " << passed << endl;
+    cout << "Number of students who failed: " << failed;
+        
+    return 0;
+}
